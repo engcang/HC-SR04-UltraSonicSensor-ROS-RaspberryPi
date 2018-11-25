@@ -23,10 +23,9 @@ https://github.com/engcang/image-files/blob/master/sonar_sensor/Raspberry.jpg
 
 ## ● Using the code as ROS node
 + git clone the codes first
-<br>
-~~~shell
-$ git clone https://github.com/engcang/HC-SR04-UltraSonicSensor-ROS-RaspberryPi.git
-~~~
+  ~~~shell
+  $ git clone https://github.com/engcang/HC-SR04-UltraSonicSensor-ROS-RaspberryPi.git
+  ~~~
 <br>
 
 + Run the code directly with ROS Master
@@ -54,5 +53,5 @@ $ git clone https://github.com/engcang/HC-SR04-UltraSonicSensor-ROS-RaspberryPi.
   <node pkg="<name>" type="ROS_sonar_sensor.py" name="ROS_sonar_sensor" />
   ~~~
 <p align="center">
-<img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/ROS_topic.gif" width="500" hspace="0"/>
+<img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/ROS_topic.gif" width="400" height="500" hspace="0"/>
 </p>
