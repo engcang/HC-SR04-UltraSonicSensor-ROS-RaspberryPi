@@ -22,6 +22,13 @@ https://github.com/engcang/image-files/blob/master/sonar_sensor/Raspberry.jpg
 </br></br>
 
 ## ● Using the code as ROS node
++ git clone the codes first
+<br>
+~~~shell
+$ git clone https://github.com/engcang/HC-SR04-UltraSonicSensor-ROS-RaspberryPi.git
+~~~
+<br>
+
 + Run the code directly with ROS Master
   ~~~shell
   $ roscore
