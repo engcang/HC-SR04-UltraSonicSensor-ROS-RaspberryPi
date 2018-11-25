@@ -19,7 +19,7 @@
   <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/gpio.png" width="500" hspace="0"/>
   </p>
 
-
+<br>
 + Result on Raspberry pi board on Turtlebot3
 <p align="center">
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/Raspberry.jpg" width="500" hspace="0"/>
@@ -35,6 +35,7 @@
   $ python sonar_sensor.py
   ~~~
 <br>
+
 ## ● Code explanation
 + 
   ~~~python
@@ -88,6 +89,7 @@
       gpio.cleanup()
   ~~~
 
+<br>
 ## ● Using the code as ROS node
 + git clone the codes first
   ~~~shell
