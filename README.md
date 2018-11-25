@@ -3,6 +3,13 @@
 + [Circuit and Python original Source code reference](https://blog.naver.com/roboholic84/220319850312)
 </br></br><br>
 
+## Index
++ [Circuit](#)
++ [Code explanation](#)
++ [Using code as ROS node](#)
+
+<br>
+
 ## ● Circuit
 + Raspberry pi cannot get input for 5V but 3.3V so we have to reduce voltage using Resistance like [here](https://blog.naver.com/roboholic84/220319850312)
 <p align="center">
@@ -20,7 +27,9 @@
   </p>
 
 <br>
+
 + Result on Raspberry pi board on Turtlebot3
+
 <p align="center">
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/Raspberry.jpg" width="500" hspace="0"/>
 </p>
@@ -37,10 +46,9 @@
 <br>
 
 ## ● Code explanation
-+ 
++ Import libraries and setup GPIO pins
   ~~~python
   #!/usr/bin/env python
-
   import RPi.GPIO as gpio
   import time
   import sys
@@ -57,7 +65,11 @@
 
   gpio.setup(trig, gpio.OUT)
   gpio.setup(echo, gpio.IN)
+  ~~~
+<br>
 
++ Trig pulse and wait Echo
+  ~~~python
   time.sleep(0.5)
   print ('-----------------------------------------------------------------sonar start')
   try :
@@ -88,7 +100,6 @@
   except:
       gpio.cleanup()
   ~~~
-
 <br>
 ## ● Using the code as ROS node
 + git clone the codes first
