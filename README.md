@@ -96,8 +96,8 @@
   ~~~
   3.Wait 0.1 second to be stable and then Trig pulse for 0.00001 sec <br>
   4.Wait until Echo pulse comes in and then calculate pulse_duration time <br>
-  5.Calculate Distance using **Speed of Sound**, approximately 340m/s, here 17000cm/s for round-trip of pulse
-  6.Limit the result by time out and maximum distance by sensor's specification
+  5.Calculate Distance using **Speed of Sound**, approximately 340m/s, here 17000cm/s for round-trip of pulse <br>
+  6.Limit the result by time out and maximum distance by sensor's specification <br>
 
 <br>
 
