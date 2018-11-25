@@ -4,9 +4,9 @@
 </br></br><br>
 
 ## Index
-+ [Circuit](#)
-+ [Code explanation](#)
-+ [Using code as ROS node](#)
++ [Circuit](#-circuit)
++ [Code explanation](#-code-explanation)
++ [Using code as ROS node](#-using-the-code-as-ros-node)
 
 <br>
 
