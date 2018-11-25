@@ -28,7 +28,7 @@
 
 <br>
 
-+ Result on Raspberry pi board on Turtlebot3
++ Result image on Raspberry pi board on Turtlebot3
 
 <p align="center">
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/Raspberry.jpg" width="500" hspace="0"/>
@@ -57,6 +57,9 @@
   gpio.setup(trig, gpio.OUT)
   gpio.setup(echo, gpio.IN)
   ~~~
+  1.**signal_handler** function exit program when terminal gets **CTRL + C** <br>
+  2.You should change **trig** and **echo** value if you want to plug those into different GPIOs <br>
+
 <br>
 
 + Trig pulse and wait Echo
@@ -91,6 +94,11 @@
   except:
       gpio.cleanup()
   ~~~
+  3.Wait 0.1 second to be stable and then Trig pulse for 0.00001 sec <br>
+  4.Wait until Echo pulse comes in and then calculate pulse_duration time <br>
+  5.Calculate Distance using **Speed of Sound**, approximately 340m/s, here 17000cm/s for round-trip of pulse
+  6.Limit the result by time out and maximum distance by sensor's specification
+
 <br>
 
 ## ● Using the code directly
@@ -136,6 +144,7 @@
   Simply add this line into launch file you want to launch together
 
 <br>
+
 + Result data by _**rostopic echo /sonar_dist**_
 <p align="center">
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/ROS_topic.gif" width="400" height="500" hspace="0"/>
