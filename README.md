@@ -36,15 +36,6 @@
 
 </br></br>
 
-## ● Using the code directly
-+ git clone the codes first
-  ~~~shell
-  $ git clone https://github.com/engcang/HC-SR04-UltraSonicSensor-ROS-RaspberryPi.git
-  $ cd HC-SR04-UltraSonicSensor-ROS-RaspberryPi
-  $ python sonar_sensor.py
-  ~~~
-<br>
-
 ## ● Code explanation
 + Import libraries and setup GPIO pins
   ~~~python
@@ -102,6 +93,15 @@
   ~~~
 <br>
 
+## ● Using the code directly
++ git clone the codes first
+  ~~~shell
+  $ git clone https://github.com/engcang/HC-SR04-UltraSonicSensor-ROS-RaspberryPi.git
+  $ cd HC-SR04-UltraSonicSensor-ROS-RaspberryPi
+  $ python sonar_sensor.py
+  ~~~
+<br>
+
 ## ● Using the code as ROS node
 + git clone the codes first
   ~~~shell
@@ -133,6 +133,10 @@
   ~~~xml
   <node pkg="<name>" type="ROS_sonar_sensor.py" name="ROS_sonar_sensor" />
   ~~~
+  Simply add this line into launch file you want to launch together
+
+<br>
++ Result data by _**rostopic echo /sonar_dist**_
 <p align="center">
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/ROS_topic.gif" width="400" height="500" hspace="0"/>
 </p>
