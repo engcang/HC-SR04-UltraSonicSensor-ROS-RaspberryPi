@@ -1,25 +1,30 @@
 # HC-SR04 UltraSonic Sensor - ROS in Python
 + [HC-SR04 specification and guide](https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/)
 + [Circuit and Python original Source code reference](https://blog.naver.com/roboholic84/220319850312)
-</br></br>
+</br></br><br>
 
 ## ● Circuit
-+ []()
-https://github.com/engcang/image-files/blob/master/sonar_sensor/Resistance.jpg
-https://github.com/engcang/image-files/blob/master/sonar_sensor/Raspberry.jpg
++ Raspberry pi cannot get input for 5V but 3.3V so we have to reduce voltage using Resistance like [here](https://blog.naver.com/roboholic84/220319850312)
+<p align="center">
+<img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/Resistance.jpg" width="500" hspace="0"/>
+</p>
+<br>
++ Plug into GPIO, for my code, 
 <p align="center">
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/gpio.png" width="500" hspace="0"/>
+</p>
+  + Vcc to any 5V (pin number 2)
+  + GND to any Ground (pin number 9)
+  + TRIG to GPIO 27 (pin number 13)
+  + Echo to GPIO 17 (pin number 11)
+
+
+<p align="center">
+<img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/Raspberry.jpg" width="500" hspace="0"/>
 </p>
 
 </br></br>
 
-## ● Distance using Python
-+ [MATLAB version](https://github.com/engcang/CascadeObjectDetector_MATLAB_Python/tree/master/Detect_MATLAB)
-+ [Python version](https://github.com/engcang/CascadeObjectDetector_MATLAB_Python/tree/master/Detect_Python)
-<br>
-
-+ result clip
-</br></br>
 
 ## ● Using the code as ROS node
 + git clone the codes first
