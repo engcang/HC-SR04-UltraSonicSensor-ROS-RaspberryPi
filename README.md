@@ -9,16 +9,18 @@
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/Resistance.jpg" width="500" hspace="0"/>
 </p>
 <br>
+
 + Plug into GPIO, for my code, 
 <p align="center">
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/gpio.png" width="500" hspace="0"/>
 </p>
+
   + Vcc to any 5V (pin number 2)
   + GND to any Ground (pin number 9)
   + TRIG to GPIO 27 (pin number 13)
   + Echo to GPIO 17 (pin number 11)
 
-
++ Result on Raspberry pi board on Turtlebot3
 <p align="center">
 <img src="https://github.com/engcang/image-files/blob/master/sonar_sensor/Raspberry.jpg" width="500" hspace="0"/>
 </p>
